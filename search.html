@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Cocktails For Your Ingredients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="search.css">
+    <script src="https://kit.fontawesome.com/67ab39be8c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fas fa-cocktail"></i> COCKTAIL HOUR</a>
+                <div class="navbar__toggle" id="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/search.html" class="navbar__links">Search</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contactus.html" class="navbar__links">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    
+    <div class="container">
+        <div class="drink-wrapper">
+            <div class="drink-search">
+                <h2 class="title">Find Cocktails For Your Ingredients</h2>
+                
+                <div class="drink-search-box">
+                    <input type="text" class="search-control" placeholder = "Enter an Ingredient" id = "search-input">
+                    <button type = "submit" class = "search-btn btn" id = "search-btn">
+                        <i class = "fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="drink-result">
+                <h2 class="title">Your Search Results:</h2>
+                <div id="drink">
+                </div>
+            </div>
+
+            <div class="drink-details">
+                <button type ="button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+                    <i class = "fas fa-times"></i>
+                </button>
+
+                <div class="drink-details-content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
